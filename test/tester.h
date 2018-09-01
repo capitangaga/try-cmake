@@ -12,6 +12,9 @@ TEST(tests, test1){
     EXPECT_EQ(2, 2);
 }
 
+TEST(tests, test2){
+    EXPECT_EQ(2, 3);
+}
 
 int main(int argc, char** argv){
     testing::InitGoogleTest(&argc, argv);
