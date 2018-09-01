@@ -1,7 +1,16 @@
 cmake_minimum_required(VERSION 3.7)
-project(tryCmake)
 
-set(CMAKE_CXX_STANDARD 14)
+project(TRYTESTS)
 
-set(SOURCE_FILES main.cpp)
-add_executable(tryCmake ${SOURCE_FILES})
+enable_testing()
+
+add_subdirectory(src)
+add_subdirectory(test)
+
+
+
+find_package(GTest REQUIRED)
+
+include_directories(${GTEST_INCLUDE_DIRS})
+
+
