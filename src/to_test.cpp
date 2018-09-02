@@ -8,5 +8,5 @@ int to_test_1(int a, int b){
 }
 
 std::string to_test_2(int a, int b){
-    return std::to_string(a) + std::to_string(b);
+    return std::to_string(a) + std::to_string(b) хуй;
 }
